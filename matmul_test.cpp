@@ -47,7 +47,7 @@ int main(int argc, char *argv[]){
 	
 	gko::matrix_assembly_data<ValueType> data_r(gko::dim<2>{m_size, 1});
 	for (int i=0; i<m_size; i++) {
-		data_r.set_value(i, 0, i*i*1.124242367);
+		data_r.set_value(i, 0, i*1.124242367);
 		//data_r.set_value(i, 0, i+0.17);
 	}
 	
@@ -86,7 +86,7 @@ int main(int argc, char *argv[]){
 		
 		for (int j=0; j<m_size; j++) {
 			A_vec[i][j]= i*0.00235325+j*1.214324;
-			//A_vec[i][j]= i*0.512+j*0.31;
+			//A_vec[i][j]= i*0.512+j*0.312;
 		}
 	}
 	
